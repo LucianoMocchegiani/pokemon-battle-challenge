@@ -1,0 +1,88 @@
+.card-battle-container {
+    width: 220px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.card-batlle-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-battle-name-text {
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+
+.card-batlle-header img {
+    width: 180px;
+    height: 180px;
+}
+
+.card-battle-stats-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card-battle-stats-container p {
+    font-weight: 500;
+    margin: 0;
+    font-size: 12px;
+}
+
+@media (max-width: 690px) {
+    .card-battle-container{
+        width: 100%;
+        height: auto;
+        flex-direction: row;    
+    }
+    .card-batlle-header{
+        width: 50%;
+    }
+    .card-battle-stats-container {
+        width: 40%;
+    }
+    .card-batlle-header img {
+        max-width: 180px;
+        max-height: 180px;
+        width: 150px;
+        height: 150px;
+    }
+    .card-battle-name-text {
+        text-align: center;
+    }
+}
+@media (max-width: 390px) {
+    .card-batlle-header img {
+        max-width: 180px;
+        max-height: 180px;
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 300px) {
+    .card-battle-container{
+        flex-direction: column;    
+    }
+    .card-batlle-header img {
+        display:none
+    }
+    .card-battle-stats-container {
+        width: 90%;
+    }
+}
+
+

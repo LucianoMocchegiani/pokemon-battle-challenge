@@ -1,0 +1,19 @@
+.battle-result-container {
+    width: 96%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    margin-top: 14px;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.3);
+    background-color: rgb(220, 241, 234);
+  }
+  
+  .battle-result-text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
