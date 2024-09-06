@@ -26,7 +26,7 @@ API diseñada para gestionar datos y proporcionar endpoints para una aplicación
     npm run start:dev o npm run start
 
 
-## Endponts
+## Endpoints
 
 
 1. /pokemons
