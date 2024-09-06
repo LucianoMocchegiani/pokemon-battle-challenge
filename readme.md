@@ -29,32 +29,32 @@ API diseñada para gestionar datos y proporcionar endpoints para una aplicación
 ## Endponts
 
 
-- /pokemons
+1. /pokemons
 
-    Método: GET
+    - Método: GET
 
-    Descripción: Obtiene una lista de todos los Pokémon disponibles en el servidor.
+        - Descripción: Obtiene una lista de todos los Pokémon disponibles en el servidor.
 
-    Respuesta: Un array de objetos Pokémon  {id, name, type, speed, hp, attack, defense}.
-
-
-
-- /battles
-
-    Método: POST
-
-    Descripción: Crea una nueva batalla entre dos Pokémon.
-
-    Respuesta: Un objeto batalla {id, results, message:'pokemon win!'}.
-
-    Uso: Se deben enviar dos parámetros en el cuerpo de la solicitud (body), que son los IDs de los dos Pokémon que van a batallar ({id1, id2}).
+        - Respuesta: Un array de objetos Pokémon  {id, name, type, speed, hp, attack, defense}.
 
 
-    Método: GET
 
-    Descripción: Obtiene una lista de todas las batallas registradas en el servidor.
+2. /battles
 
-    Respuesta: Un array de objetos batalla {id, results, message:'pokemon win!'}.
+    - Método: POST
+
+        - Descripción: Crea una nueva batalla entre dos Pokémon.
+
+        - Respuesta: Un objeto batalla {id, results, message:'pokemon win!'}.
+
+        - Uso: Se deben enviar dos parámetros en el cuerpo de la solicitud (body), que son los IDs de los dos Pokémon que van a batallar ({id1, id2}).
+
+
+    - Método: GET
+
+        - Descripción: Obtiene una lista de todas las batallas registradas en el servidor.
+
+        - Respuesta: Un array de objetos batalla {id, results, message:'pokemon win!'}.
 
 ## 
 
