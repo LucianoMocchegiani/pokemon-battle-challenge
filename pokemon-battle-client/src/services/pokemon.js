@@ -2,7 +2,7 @@ const { VITE_API_URL } = import.meta.env
 
 export const getPokemons = async () => {
     try{
-        const res = await fetch(`${VITE_API_URL}/pokemons`)
+        const res = await fetch(`${VITE_API_URL}/pokemons`) 
         if(!res.ok) {
             throw new Error(`Error ${res.status}`);
         }

@@ -14,7 +14,7 @@ export class BattleService {
         private readonly pokemonRepository: Repository<Pokemon>,
     ) {}
 
-    async createBattle(id1:string, id2:string): Promise<Battle> {
+    async createBattle(id1:number, id2:number): Promise<Battle> {
         const pokemonA = await this.pokemonRepository.findOneBy({ id:id1 });
         const pokemonB = await this.pokemonRepository.findOneBy({ id:id2 });
         const newBattle = new BattleGenerator(pokemonA!, pokemonB!)

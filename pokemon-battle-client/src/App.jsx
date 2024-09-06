@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/App.css'
 import PokemonList from './components/PokemonList'
 import CardBattle from './components/CardBattle'
 import BattleResult from './components/BattleResult'

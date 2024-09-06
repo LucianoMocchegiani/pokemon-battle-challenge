@@ -1,7 +1,7 @@
 import { type } from "os"
 
 export type Pokemon = {
-    id: string
+    id: number
     name: string
     attack: number
     defense: number
@@ -13,7 +13,7 @@ export type Pokemon = {
 }
 
 export type Turn = {
-    id: string
+    id: number
     name: string
     damageRecived: number
     hpRemaning: number

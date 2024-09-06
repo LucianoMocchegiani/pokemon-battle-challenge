@@ -9,6 +9,9 @@
     box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.3);
     background-color: rgb(220, 241, 234);
   }
+  .battle-result-error{
+    background-color: rgb(247, 170, 170);
+  }
   
   .battle-result-text {
     font-size: 20px;

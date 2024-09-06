@@ -3,7 +3,7 @@ import { getPokemons } from "../services/pokemon"
 export function usePokemons(){
     const [pokemons, setPokemons] = useState({
         data:[],
-        error:null,
+        success:true,
         message:null,
     })
     const [loading, setLoading] = useState(false)
@@ -15,12 +15,15 @@ export function usePokemons(){
         
     }
     useEffect(()=>{
+        if(!pokemons.success){
+            alert(pokemons.message)
+        }
         hanndleGetPokemons()
-    },[])
+    },[pokemons.success])
 
     return{
         pokemons:pokemons.data,
-        error:pokemons.error,
+        success:pokemons.success,
         message:pokemons.message,
         loading,
         hanndleGetPokemons,

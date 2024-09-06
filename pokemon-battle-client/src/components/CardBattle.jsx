@@ -1,4 +1,4 @@
-import './CardBattle.css'
+import '../styles/CardBattle.css'
 import Slider from '@mui/material/Slider';
 import { styled } from '@mui/material/styles';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
